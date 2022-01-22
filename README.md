@@ -13,9 +13,12 @@ Consiste en un conjunto de contratos inteligentes de gestión y gobernanza confo
 * Sistema de votación
 * Capacidad de ejecución de contratos inteligentes externos previa votación. 
 
+Este contrato o grupo de contratos no es necesario desarrollarlo puesto que ya hay desarrollos que podrían servir a este cliente, como Aragon Client Membership
+
 ## B - Contrato de distribución (CD). 
 
-Consiste en un contrato ERC20 ampliado con una serie de particularidades y que gestionará la moneda común de los censados MCC.
+Consiste en un contrato ERC20 ampliado con una serie de particularidades y que gestionará la moneda común de los censados en CDC (poseedores de tokens).
+
 Cualquier CC puede reclamar tokens de CD, MMCs, hasta un límite marcado desde CDC por votación de los CCCC durante un periodo máximo marcado por un bloque de la cadena determinado también por los CCCC.
 
 El propietario del contrato será CDC y este podrá establecer tras votación de sus miembros:
