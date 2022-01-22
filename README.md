@@ -4,16 +4,16 @@ Con este sistema se pretende crear un protocolo de creación de tokens distribui
 
 El sistema consta de dos contratos inteligentes:
 
-## Contrato DAO Censal (CDC). 
+## A - Contrato DAO Censal (CDC). 
 
 Consiste en un conjunto de contratos inteligentes de gestión y gobernanza conformando entre ellos una Organización Autónoma descentralizada de tipo membership o 1 usuario 1 token 1 voto
 
 ### El CDC contará con:
-* Un token de gobernanza 1 usuario 1 token
+* Un token de gobernanza 1 usuario <-> 1 token
 * Sistema de votación
 * Capacidad de ejecución de contratos inteligentes externos previa votación. 
 
-## Contrato de distribución (CD). 
+## B - Contrato de distribución (CD). 
 
 Consiste en un contrato ERC20 ampliado con una serie de particularidades y que gestionará la moneda común de los censados MCC.
 Cualquier CC puede reclamar tokens de CD, MMCs, hasta un límite marcado desde CDC por votación de los CCCC durante un periodo máximo marcado por un bloque de la cadena determinado también por los CCCC.
@@ -26,6 +26,9 @@ El propietario del contrato será CDC y este podrá establecer tras votación de
 
 El sistema de reclamación de tokens por parte de los CCCC de forma individual, hace que, en caso de tener que pagar un GAS excesivo, sea compensado con la adquisición de los tokens reclamados, a la vez que descarga de un posible airdrop excesivamente costoso para quien tuviera que ejecutarlo.
 Se entiende que los CCCC tratarán de crear una masa monetaria suficiente para operar en su economía pero no excesivamente grande como para convertir al token en moneda inflacionaria.
-Sin límites a la iniciativa ni a la propiedad privada
-Como se observa, no se limita la cantidad máxima de MCC que puede acumular un mismo usuario, ya que de lo contrario se estaría limitando la iniciativa y un derecho fundamental como la propiedad privada.
-Tampoco se le niega a nadie la reclamación de nuevas monedas en el periodo estipulado para ello, ya que constituiría una discriminación.
+
+## Sin límites a la iniciativa ni a la propiedad privada
+
+Como se observa, no se limita la cantidad máxima de MCC que puede acumular un mismo usuario, ya que de lo contrario se estaría limitando la iniciativa y el derecho fundamental a la propiedad privada.
+
+Tampoco se le niega a nadie la reclamación de nuevas monedas en el periodo estipulado para ello, ya que algo así constituiría una discriminación.
