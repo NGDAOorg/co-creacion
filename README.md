@@ -2,6 +2,24 @@
 
 Con este sistema se pretende crear un protocolo de creación de tokens distribuido entre los usuarios de una misma comunidad, permitiendo que sea la propia comunidad de forma democrática la que decida cuándo y cuántos tokens tiene derecho a crear cada miembro de la comunidad y por tanto controlar la masa monetaria en todo momento.
 
+## Sistema de reclamación de tokens
+
+El sistema de reclamación de tokens por parte de los usuarios de forma individual, hace que en caso de tener que pagar un GAS excesivo, sea compensado con la adquisición de los tokens reclamados a la vez que descarga a un sólo usuario de un posible airdrop excesivamente costoso.
+
+## Control de la masa monetaria
+
+Los usuarios tratarán de crear una masa monetaria suficiente para operar dentro de su economía pero no excesivamente grande como para convertir al token en moneda inflacionaria y devaluar los tokens que se posean hasta ese momento o los que estén por reclamar.
+
+<img src="/images/Cocreaci%C3%B3n%20de%20moneda.png" al="Esquema de funcionamiento de la aplicación">
+
+## Sin límites a la iniciativa ni a la propiedad privada
+
+Como se observa, no se limita la cantidad máxima de MCC que puede acumular un mismo usuario, ya que de lo contrario se estaría limitando la iniciativa y el derecho fundamental a la propiedad privada.
+
+Tampoco se le niega a nadie la reclamación de nuevas monedas en el periodo estipulado para ello, ya que algo así constituiría una discriminación.
+
+
+
 El sistema consta de dos contratos inteligentes:
 
 ## A - Contrato DAO Censal (CDC). 
@@ -30,14 +48,3 @@ El propietario del contrato será CDC y este podrá establecer tras votación de
 * Cuántos tokens se pueden reclamar al mes por cada censado (MTT).
 * Próximo bloque (PBR) en el que los usuarios podrán reclamar nuevas monedas.
   * Cada vez que se establezca un nuevo comienzo de periodo, la matriz de tokens reclamados será vaciada para que todos los censados en CDC puedan volver a reclamar tokens en este nuevo periodo.
-
-## Sistema de reclamación de tokens
-
-El sistema de reclamación de tokens por parte de los CCCC de forma individual, hace que, en caso de tener que pagar un GAS excesivo, sea compensado con la adquisición de los tokens reclamados, a la vez que descarga de un posible airdrop excesivamente costoso para quien tuviera que ejecutarlo.
-Se entiende que los CCCC tratarán de crear una masa monetaria suficiente para operar en su economía pero no excesivamente grande como para convertir al token en moneda inflacionaria.
-
-## Sin límites a la iniciativa ni a la propiedad privada
-
-Como se observa, no se limita la cantidad máxima de MCC que puede acumular un mismo usuario, ya que de lo contrario se estaría limitando la iniciativa y el derecho fundamental a la propiedad privada.
-
-Tampoco se le niega a nadie la reclamación de nuevas monedas en el periodo estipulado para ello, ya que algo así constituiría una discriminación.
