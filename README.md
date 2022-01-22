@@ -12,18 +12,24 @@ Consiste en un conjunto de contratos inteligentes de gestión y gobernanza confo
 * Un token de gobernanza 1 usuario <-> 1 token
 * Sistema de votación
 * Capacidad de ejecución de contratos inteligentes externos previa votación. 
+* El propietario del contrato será el agente de CDC y este agente no podrá ejecutar ninguna acción sin permiso de los miembros de CDC.
+  * El agente de CDC, como propietario podrá:
+    * Determinar el número máximo de tokens que cada usuario podrá reclamar en un periodo determinado.
+    * Determinar el bloque de comienzo de la nueva reclamación de tokens
 
 Este contrato o grupo de contratos no es necesario desarrollarlo puesto que ya hay desarrollos que podrían servir a este cliente, como Aragon Client Membership
 
 ## B - Contrato de distribución (CD). 
 
-Consiste en un contrato ERC20 ampliado con una serie de particularidades y que gestionará la moneda común de los censados en CDC (poseedores de tokens).
-
-Cualquier CC puede reclamar tokens de CD, MMCs, hasta un límite marcado desde CDC por votación de los CCCC durante un periodo máximo marcado por un bloque de la cadena determinado también por los CCCC.
+* Consiste en un contrato ERC20 ampliado con una serie de funciones adicionales y que gestionará la moneda común de los censados en CDC (poseedores de tokens).
+* Cualquier poseedor de un token de CDC puede reclamar tokens de CD, llamados MMCs en este documento, hasta un límite durante un periodo máximo marcado por un bloque de la cadena determinado también por los CCCC.
+  * No es posible reclamar más de una vez tokens dentro del mismo periodo marcado entre bloque y bloque.
+  * El bloque que de comienzo a una petición de tokens será decidido por los miembros de CDC.
 
 El propietario del contrato será CDC y este podrá establecer tras votación de sus miembros:
 * Cuántos tokens se pueden reclamar al mes por cada censado (MTT).
 * Próximo bloque (PBR) en el que los usuarios podrán reclamar nuevas monedas.
+  * Cada vez que se establezca un nuevo comienzo de periodo, la matriz de tokens reclamados será vaciada para que todos los censados en CDC puedan volver a reclamar tokens en este nuevo periodo.
 
 ## Sistema de reclamación de tokens
 
