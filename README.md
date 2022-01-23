@@ -18,9 +18,7 @@ Como se observa, no se limita la cantidad máxima de MCC que puede acumular un m
 
 Tampoco se le niega a nadie la reclamación de nuevas monedas en el periodo estipulado para ello, ya que algo así constituiría una discriminación.
 
-
-
-El sistema consta de dos contratos inteligentes:
+- El sistema consta de dos contratos inteligentes:
 
 ## A - Contrato DAO Censal (CDC). 
 
